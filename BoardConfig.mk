@@ -78,7 +78,7 @@ TARGET_KERNEL_CLANG_VERSION := clang-6443078
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-6443078
 TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_KERNEL_LLVM_BINUTILS := false
-
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # Kernel - Offsets and Base configuration
 BOARD_KERNEL_BASE := 0x40078000
