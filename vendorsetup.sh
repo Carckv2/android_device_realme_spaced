@@ -20,6 +20,11 @@ git cherry-pick 9c71f9a66d8b71d9bf1975f46c43c562d38dfc64
 git cherry-pick 9c71f9a66d8b71d9bf1975f46c43c562d38dfc64..1f16358102caed113917071d8b58cc9d1307855b
 cd ../..
 
+# delete
+rm -rf packages/modules/Bluetooth
+
+# bluetooth 
+git clone https://github.com/Project-Xtended/packages_modules_Bluetooth.git packages/modules/Bluetooth
 
 # packages/modules/Bluetooth (required for sysbta)
 cd packages/modules/Bluetooth
@@ -29,3 +34,4 @@ git cherry-pick 50286b0eeaaa699cf5770a9cef24b35ec9f9aff4
 git cherry-pick 5610e46a47583df0fa6f731dd3196fbab158a2cd
 git cherry-pick b6d4693925823facd321a8a1d8ef7882f63fcc3c
 git cherry-pick 5ab4518edfc2299a4c2e395420981fbb669b8f90
+cd ../../../
