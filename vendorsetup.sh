@@ -20,9 +20,6 @@ git cherry-pick 9c71f9a66d8b71d9bf1975f46c43c562d38dfc64
 git cherry-pick 9c71f9a66d8b71d9bf1975f46c43c562d38dfc64..1f16358102caed113917071d8b58cc9d1307855b
 cd ../..
 
-# delete
-rm -rf packages/modules/Bluetooth
-
 # bluetooth 
 git clone https://github.com/Project-Xtended/packages_modules_Bluetooth.git packages/modules/Bluetooth
 
