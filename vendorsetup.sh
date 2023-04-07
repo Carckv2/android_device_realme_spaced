@@ -12,16 +12,11 @@ git clone https://github.com/Carckv2/android_kernel_realme_spaced.git --depth=1 
 # clang
 git clone --depth=1 https://github.com/DrtSinX98/android_prebuilts_clang_host_linux-x86_clang-6443078 prebuilts/clang/host/linux-x86/clang-6443078
 
-
-# frameworks/av (required for sysbta)
-cd frameworks/av
-git fetch https://github.com/rk134/frameworks_av.git
-git cherry-pick 9c71f9a66d8b71d9bf1975f46c43c562d38dfc64
-git cherry-pick 9c71f9a66d8b71d9bf1975f46c43c562d38dfc64..1f16358102caed113917071d8b58cc9d1307855b
-cd ../..
+rm -rf frameworks/av
+git clone git@github.com:Carckv2/frameworks-av.git -b pix frameworks/av
 
 # delete
-rm-rf packages/modules/Bluetooth
+rm -rf packages/modules/Bluetooth
 
 # bluetooth 
 git clone https://github.com/Project-Xtended/packages_modules_Bluetooth.git packages/modules/Bluetooth
