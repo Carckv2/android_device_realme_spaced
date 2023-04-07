@@ -13,7 +13,8 @@ git clone https://github.com/Carckv2/android_kernel_realme_spaced.git --depth=1 
 git clone --depth=1 https://github.com/DrtSinX98/android_prebuilts_clang_host_linux-x86_clang-6443078 prebuilts/clang/host/linux-x86/clang-6443078
 
 rm -rf frameworks/av
-git clone git@github.com:Carckv2/frameworks-av.git -b pix frameworks/av
+
+git clone git@github.com:Carckv2/frameworks-av.git -b alp frameworks/av
 
 # delete
 rm -rf packages/modules/Bluetooth
