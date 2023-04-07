@@ -22,19 +22,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/proton/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Build configuration
 IS_PHONE := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-PROTON_BUILD_TYPE := UNOFFICIAL
-PROTON_MAINTAINER := NINJA(https://t.me/xylrand)
+ALPHA_BUILD_TYPE := UNOFFICIAL
+ALPHA_MAINTAINER := NINJA(https://t.me/xylrand)
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := proton_spaced
+PRODUCT_NAME := lineage_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme 8i
