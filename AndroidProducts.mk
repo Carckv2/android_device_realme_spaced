@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_spaced.mk
+    $(LOCAL_DIR)/banana_spaced.mk
