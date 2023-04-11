@@ -15,7 +15,7 @@ git clone --depth=1 https://github.com/DrtSinX98/android_prebuilts_clang_host_li
 # delete
 rm -rf frameworks/av
 
-git clone https://github.com/Carckv2/bk.git -b 14 frameworks/av --depth=1
+git clone https://github.com/Carckv2/bk.git -b 16 frameworks/av --depth=1
 
 # delete
 rm -rf packages/modules/Bluetooth
