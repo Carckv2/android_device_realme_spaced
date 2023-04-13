@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spaced/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Build configuration
 IS_PHONE := true
@@ -34,7 +34,7 @@ PIXEL_MAINTAINER := NINJA
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_spaced
+PRODUCT_NAME := banana_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme 8i/Narzo 50
